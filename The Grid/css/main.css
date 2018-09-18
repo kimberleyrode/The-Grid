@@ -8,11 +8,31 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.grid div:nth-child(even) {
-    background-color: green;
+.title {
+    grid-column: 1 / 3;
+    background-color: mediumaquamarine;
 }
 
-.grid div:nth-child(odd) {
-    background-color: red;
+.header {
+    grid-column-end: span 2;
+    background-color: aliceblue;
+}
+
+.sidebar {
+    background-color: mediumaquamarine;
+}
+
+.content {
+    background-color: aliceblue; 
+}
+
+.photo {
+    grid-row-end: span 2;
+}
+ 
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: mediumaquamarine
 }
 
